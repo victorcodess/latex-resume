@@ -1,6 +1,6 @@
 \documentclass{resume}
 
-\usepackage[letterpaper,left=10mm,top=10mm,right=0.4in,bottom=0.38in]{geometry}
+\usepackage[letterpaper,hmargin=0.3in,vmargin=0.2in]{geometry}
 
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
@@ -14,16 +14,22 @@
 
 \begin{document}
 
+\begin{rSection}{Education}
+
+\entrytitle{B.Eng Electrical Engineering}, Covenant University (Second Class Upper) \hfill Nov 2020 — Oct 2025
+% Relevant Coursework: Software Development Life Cycle, Introduction to C, Algorithms and Data Structures, Digital Electronics.
+\end{rSection}
+
 \begin{rSection}{WORK EXPERIENCE}
 
-\textbf{Frontend Engineer} \hfill April 2024 — January 2026\\
+\entrytitle{Frontend Engineer} \hfill Apr 2024 — Jan 2026\\
 \href{https://contra.com/victorwilliams}{Freelance} (Contra) \hfill \textit{(Remote)}
  \begin{itemize}
     \itemsep -3pt {}
      \item Delivered frontend solutions across 12+ companies—including YC-backed Rulebase, Anyday, and Convoy—spanning website redesigns, CMS migrations, design systems, and interactive dashboards using React, TypeScript, Next.js, and Framer Motion.
  \end{itemize}
 
-\textbf{Frontend Engineer} \hfill March 2025 — December 2025\\
+\entrytitle{Frontend Engineer} \hfill Mar 2025 — Dec 2025\\
 SELECT \hfill \textit{Ontario, Canada (Remote)}
  \begin{itemize}
     \itemsep -3pt {}
@@ -32,7 +38,7 @@ SELECT \hfill \textit{Ontario, Canada (Remote)}
     \item Designed comprehensive Sanity schema architecture supporting 10+ custom content types with rich text, media management, and dynamic references for flexible content creation
  \end{itemize}
 
-\textbf{Frontend Engineering Intern} \hfill March 2024 — August 2024\\
+\entrytitle{Frontend Engineering Intern} \hfill Mar 2024 — Aug 2024\\
 Korapay \hfill \textit{Lagos, Nigeria}
  \begin{itemize}
     \itemsep -3pt {}
@@ -41,7 +47,7 @@ Korapay \hfill \textit{Lagos, Nigeria}
     \item Created a robust search functionality by integrating Google Maps API with auto-complete and country filters, increasing user search precision by 45\%.
  \end{itemize}
 
-\textbf{Frontend Engineering Intern} \hfill August 2023 — October 2023\\
+\entrytitle{Frontend Engineering Intern} \hfill Aug 2023 — Oct 2023\\
 Mono \hfill \textit{Lagos, Nigeria}
  \begin{itemize}
     \itemsep -3pt {}
@@ -54,21 +60,21 @@ Mono \hfill \textit{Lagos, Nigeria}
 
 \begin{rSection}{PROJECTS}
 
-\textbf{\href{https://orin.chat/}{Orin}} \hfill June 2026 \\[0.1cm]
+\entrylink{https://orin.chat/}{Orin} \hfill Jun 2026 \\[0.1cm]
  Voice-enabled AI companion users can text and call in a single thread, with personality customization and persistent history. Built with Next.js, TypeScript, Node.js, Supabase, Zustand, Tanstack Query, Vercel AI SDK, and ElevenLabs
 \begin{itemize}
     \itemsep -3pt {}
     \item Built a Node.js voice sidecar linking ElevenLabs Speech Engine to OpenAI streaming via shared prompt/history code, persisting voice turns to Postgres with serialized writes and STT dedup.
-    \item Developed streaming chat with edit/regenerate, Scribe dictation, read-aloud TTS (Supabase Storage cache), and a WebRTC overlay merging live voice transcripts into one thread.
+   %  \item Developed streaming chat with edit/regenerate, Scribe dictation, read-aloud TTS (Supabase Storage cache), and a WebRTC overlay merging live voice transcripts into one thread.
     \item Implemented quota metering and BYOK (AES-256-GCM), Google OAuth with anonymous session merge, API rate limits, and Vitest tests for quota, crypto, and redirect paths.
 \end{itemize}
 
-\textbf{\href{https://nexus-ui.dev/}{Nexus UI}} \hfill Feburary 2026 \\[0.1cm]
+\entrylink{https://nexus-ui.dev/}{Nexus UI} \hfill Feb 2026 \\[0.1cm]
 Open-source React component library for building AI applications; Distributed via the shadcn/ui registry. \textbf{100+ stars} on GitHub
 \begin{itemize}
     \itemsep -3pt {}
     \item Implemented composable UI primitives in React and TypeScript on Radix and Tailwind v4—prompt input, model selector, suggestion chips, attachments, Streamdown messages, stick-to-bottom thread, citation previews, and more.
-    \item Built a RAG-powered AI chat for the Nexus UI docs site, retrieving documentation at request time to deliver grounded, streamed answers with source citations on a public, rate-limited endpoint.
+   %  \item Built a RAG-powered AI chat for the Nexus UI docs site, retrieving documentation at request time to deliver grounded, streamed answers with source citations on a public, rate-limited endpoint.
     \item Published an MDX powered documentation site with runnable demos, component API reference, Vercel AI SDK guides, Agent Skills, MCP setup, and llms.txt endpoints for AI tools.
 \end{itemize}
 
@@ -76,17 +82,21 @@ Open-source React component library for building AI applications; Distributed vi
 
 \begin{rSection}{TECHNICAL SKILLS}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} p{0.70\textwidth}  }
+\begin{tabular}{ @{} >{\entrytitlefontsize\bfseries}l @{\hspace{6ex}} p{0.70\textwidth}  }
 Web \& Core Technologies & HTML/CSS, JavaScript/TypeScript, React, Next.js, Tailwind CSS, Redux, GraphQL, REST APIs, Node.js, Git/GitHub, Figma, Framer Motion, Sanity CMS, Supabase, Auth.js, Shadcn. \\
 \end{tabular}
 
 \end{rSection}
 
-\begin{rSection}{Education}
-
-{\bf B.Eng Electrical Engineering}, {Covenant University (Second Class Upper)} \hfill {November 2020 — October 2025}\\
-Relevant Coursework: Software Development Life Cycle, Introduction to C, Algorithms and Data Structures, Digital Electronics.
-
-\end{rSection}
+\begin{rSection}{VOLUNTEERING EXPERIENCE}
+   \textbf{Lead} \hfill May 2024 — Jul 2025\\
+   Google Developer Group, Covenant University \hfill \textit{Ogun, Nigeria}
+    \begin{itemize}
+       \itemsep -3pt {} 
+       \item Led GDG, Covenant University, growing community engagement to 1000+ members through organizing 50+ workshops, study jams, and tech events, including co-organizing TechFest—the university's largest tech conference.
+   
+    \end{itemize}
+    
+    \end{rSection}
 
 \end{document}

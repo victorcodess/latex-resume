@@ -22,6 +22,16 @@
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
+\usepackage{anyfontsize}
+
+\renewcommand{\normalsize}{\fontsize{9.5}{11.5}\selectfont}
+\normalsize
+
+\newcommand{\sectionfontsize}{\fontsize{11}{13}\selectfont}
+\newcommand{\entrytitlefontsize}{\fontsize{10}{12}\selectfont}
+\newcommand{\entrytitle}[1]{{\entrytitlefontsize\textbf{#1}}}
+\newcommand{\entrylink}[2]{{\entrytitlefontsize\textbf{\href{#1}{#2}}}}
+
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
@@ -103,7 +113,7 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \MakeUppercase{\bf #1} % Section title
+  {\sectionfontsize\bf\MakeUppercase{#1}} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
