@@ -27,10 +27,18 @@
 \renewcommand{\normalsize}{\fontsize{9.5}{11.5}\selectfont}
 \normalsize
 
+\usepackage{enumitem}
+% itemize sits inside rSection's list, so preamble \leftmargini has no effect.
+% Only adjust horizontal indent; leave vertical spacing untouched.
+\setlist[itemize]{leftmargin=1.75em, labelsep=0.35em}
+
 \newcommand{\sectionfontsize}{\fontsize{11}{13}\selectfont}
 \newcommand{\entrytitlefontsize}{\fontsize{10}{12}\selectfont}
 \newcommand{\entrytitle}[1]{{\entrytitlefontsize\textbf{#1}}}
 \newcommand{\entrylink}[2]{{\entrytitlefontsize\textbf{\href{#1}{#2}}}}
+\newcommand{\experienceentry}[4]{%
+  {\entrytitlefontsize\textbf{#1}, #2}\hfill\textit{(#3)} #4\vspace{-4pt}%
+}
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
