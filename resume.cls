@@ -39,6 +39,10 @@
 \newcommand{\experienceentry}[4]{%
   {\entrytitlefontsize\textbf{#1}, #2}\hfill\textit{(#3)} #4\vspace{-4pt}%
 }
+\newcommand{\projectentry}[4]{%
+  \entrylink{#1}{#2}\hfill #3\\
+  #4\vspace{-2pt}%
+}
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
