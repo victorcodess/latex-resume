@@ -20,11 +20,11 @@
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[11pt,letterpaper]{article} % Font size and paper type
+\LoadClass[11pt,a4paper]{article} % Font size and paper type
 
 \usepackage{anyfontsize}
 
-\renewcommand{\normalsize}{\fontsize{9.5}{11.5}\selectfont}
+\renewcommand{\normalsize}{\fontsize{10}{12}\selectfont}
 \normalsize
 
 \usepackage{enumitem}
@@ -43,17 +43,24 @@
   \entrylink{#1}{#2}\hfill #3\\
   #4\vspace{-2pt}%
 }
+\newlength{\skillgroupskip}
+\setlength{\skillgroupskip}{0.3em}
+\newcommand{\skillgroup}[2]{\entrytitle{#1} #2\\[\skillgroupskip]}
+\newcommand{\skillgrouplast}[2]{\entrytitle{#1} #2}
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 
+\usepackage{xcolor}
+\definecolor{resumeblue}{HTML}{0077b6}
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=cyan,
+    linkcolor=resumeblue,
+    filecolor=resumeblue,
+    urlcolor=resumeblue,
 }
 
 \pagestyle{empty} % Suppress page numbers
@@ -134,6 +141,20 @@
   \item[]
 }{
   \end{list}
+}
+
+% Tighter section header for short bottom sections (e.g. Education)
+\newenvironment{rCompactSection}[1]{%
+  \vspace{0.35em}%
+  {\sectionfontsize\bf\MakeUppercase{#1}}%
+  \vspace{0.15em}%
+  \hrule
+  \begin{list}{}{%
+    \setlength{\leftmargin}{0em}%
+  }%
+  \item[]%
+}{%
+  \end{list}%
 }
 
 %----------------------------------------------------------------------------------------
