@@ -24,7 +24,7 @@
 
 \usepackage{anyfontsize}
 
-\renewcommand{\normalsize}{\fontsize{10}{12}\selectfont}
+\renewcommand{\normalsize}{\fontsize{10}{12.25}\selectfont}
 \normalsize
 
 \usepackage{enumitem}
