@@ -3,6 +3,8 @@
 
 \usepackage[a4paper,hmargin=0.4in,top=0.3in,bottom=0.3in]{geometry}
 
+% cp main.pdf ~/Documents/victor_williams_resume_2026.pdf
+
 \name{Victor Williams}
 % \address{+234 706 359 7133 \\ Lagos, Nigeria}
 % \address{\href{mailto:victor.will.chuk@gmail.com}{victor.will.chuk@gmail.com} \\
@@ -16,10 +18,17 @@
 
 \begin{document}
 
+\begin{rSection}{Education}
+
+    \entrytitle{B.Eng Electrical and Electronics Engineering}, Covenant University (Second Class Upper) \hfill {Nov 2020 — Oct 2025}
+    % Relevant Coursework: Algorithms and Data Structures, Software Development Life Cycle, Introduction to C, Digital Electronics.
+    \end{rSection}
+ 
+
 
 \begin{rSection}{WORK EXPERIENCE}
 
-\experienceentry{Frontend Engineer}{\href{https://contra.com/victorwilliams}{Freelance} (Contra)}{Remote}{Apr 2024 — Feb 2026}
+\experienceentry{Frontend Engineer}{Freelance (\href{https://contra.com/victorwilliams}{Contra})}{Remote}{Apr 2024 — Present}
 \begin{itemize}
     \itemsep -3pt {}
      \item Developed production-ready frontends across 12 startups (including YC-backed Rulebase and Convoy), converting Figma designs into responsive React/Next.js, Framer, and Hugo sites spanning 60+ pages
@@ -55,24 +64,34 @@
 
 \begin{rSection}{PROJECTS}
 
-\entrylink{https://orin.chat/}{Orin} \hfill Jun 2026 \\[0.05cm]
- Voice-enabled AI companion users can text and call in a single thread, with personality customization and persistent history.  \\[-0.5cm]
+\entrytitle{Orin} (\href{https://orin.chat/}{orin.chat}) \hfill Jun 2026 \\[0.05cm]
+ Voice-enabled AI companion users can text and call in a single thread, with personality customization and persistent history  \\[-0.5cm]
 %  Built with Next.js, TypeScript, Node.js, Supabase, Zustand, Tanstack Query, Vercel AI SDK, and ElevenLabs \\[-0.5cm]
 \begin{itemize}
-    \itemsep -3pt {}
+    \itemsep -2.5pt {}
     \item Built end-to-end voice and streaming chat: Node.js sidecar linking ElevenLabs to OpenAI with shared prompt/history, WebRTC transcript overlay, edit/regenerate, Scribe dictation, TTS, and Postgres persistence with STT dedup
-    \item Implemented quota metering and BYOK (AES-256-GCM), Google OAuth with anonymous session merge, API rate limits, and Vitest tests for quota, crypto, and redirect paths
+    \item Implemented quota metering and BYOK, Google OAuth with anonymous session merge, API rate limits, and Vitest tests for quota, crypto, and redirect paths
 \end{itemize}
 
-\entrylink{https://nexus-ui.dev/}{Nexus UI} \hfill Mar 2026 \\[0.05cm]
+\entrytitle{Nexus UI} (\href{https://nexus-ui.dev/}{nexus-ui.dev}) \hfill Mar 2026 \\[0.05cm]
 Open-source React component library for AI applications; Distributed via the shadcn/ui registry. \textbf{100+ stars} on GitHub \\[-0.5cm]
 \begin{itemize}
-    \itemsep -3pt {}
+    \itemsep -2.5pt {}
     \item Implemented composable UI primitives in React and TypeScript on Radix and Tailwind v4—prompt input, model selector, suggestion chips, attachments, Streamdown messages, stick-to-bottom thread, citation previews, and more
     \item Published an MDX documentation site with examples, API reference, Vercel AI SDK guides, Agent Skills, and llms.txt for AI tools, plus a RAG-powered AI chat feature delivering grounded, streamed answers with source citations
 \end{itemize}
 
 \end{rSection}
+
+%  \begin{rSection}{VOLUNTEERING EXPERIENCE}
+%  \experienceentry{Lead}{Google Developer Group, Covenant University}{Ogun, Nigeria}{May 2024 — Jul 2025}
+%     \begin{itemize}
+%         \itemsep -2.5pt {} 
+%         \item Led GDG, Covenant University, growing community engagement to 1000+ members through organizing 50+ workshops, study jams, and tech events, including co-organizing TechFest—the university's largest tech conference.
+    
+%      \end{itemize}
+     
+%      \end{rSection}
 
 \begin{rSection}{SKILLS}
 
@@ -81,20 +100,6 @@ Open-source React component library for AI applications; Distributed via the sha
 \skillgrouplast{Tools:}{REST APIs, PostgreSQL, Sanity CMS, Supabase, Vercel AI SDK, Auth.js, Git, Figma}
 \end{rSection}
 
-\begin{rSection}{Education}
 
-   \entrytitle{B.Eng Electrical and Electronics Engineering}, Covenant University (Second Class Upper) \hfill {Nov 2020 — Oct 2025}
-   % Relevant Coursework: Algorithms and Data Structures, Software Development Life Cycle, Introduction to C, Digital Electronics.
-   \end{rSection}
-
-% \begin{rSection}{VOLUNTEERING EXPERIENCE}
-% \experienceentry{Lead}{Google Developer Group, Covenant University}{Ogun, Nigeria}{May 2024 — Jul 2025}
-%    \begin{itemize}
-%        \itemsep -3pt {} 
-%        \item Led GDG, Covenant University, growing community engagement to 1000+ members through organizing 50+ workshops, study jams, and tech events, including co-organizing TechFest—the university's largest tech conference.
-   
-%     \end{itemize}
-    
-%     \end{rSection}
 
 \end{document}
