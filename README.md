@@ -24,7 +24,7 @@ make watch  # rebuild on save (opens PDF in Preview on each build)
 make clean  # remove build artifacts
 ```
 
-Output is written to `main.pdf`.
+Output is written next to each source file: `resume/main.pdf`, `cover-letters/coverletter.pdf`, and `cover-letters/coverletter-bloomberg.pdf`.
 
 ### PDF not updating in Cursor?
 
@@ -32,7 +32,7 @@ Output is written to `main.pdf`.
 
 Cursor's built-in PDF preview does **not** auto-reload when the file changes on disk. To see updates:
 
-1. **Close and reopen** the `main.pdf` tab in Cursor, or
+1. **Close and reopen** the `resume/main.pdf` tab in Cursor, or
 2. Use the PDF that `make watch` opens in **Preview** (macOS), which reloads automatically, or
 3. Run `make` manually after edits, then reopen the PDF tab.
 
@@ -41,7 +41,9 @@ If `make watch` itself seems stuck, stop it (`Ctrl+C`) and restart it.
 ## Structure
 
 ```
-main.tex      Resume content
-resume.cls    Document class (name, address, rSection)
-Makefile      Build commands
+resume/main.tex                         Resume
+cover-letters/coverletter.tex           Cover letter (Morgan Stanley)
+cover-letters/coverletter-bloomberg.tex Cover letter (Bloomberg)
+cls/resume.cls                          Shared document class
+Makefile                                Build commands
 ```
