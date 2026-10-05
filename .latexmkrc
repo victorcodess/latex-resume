@@ -4,9 +4,13 @@ $pdf_mode = 1;
 $do_cd = 1;
 $pdflatex = 'pdflatex -interaction=nonstopmode -synctex=1 -file-line-error %O %S';
 
-# Shared class is in cls/. Resolve it from the repo root or from a source folder.
-my $here = abs_path('.');
-my $root = -f "$here/cls/resume.cls" ? $here : abs_path("$here/..");
+# Shared class is in cls/. Walk up from the current directory to the repo root.
+my $root = abs_path('.');
+while (!-f "$root/cls/resume.cls") {
+  my $parent = abs_path("$root/..");
+  last if $parent eq $root;
+  $root = $parent;
+}
 ensure_path('TEXINPUTS', "$root/cls");
 
 # Open PDF in the system viewer after each build.

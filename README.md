@@ -24,7 +24,7 @@ make watch  # rebuild on save (opens PDF in Preview on each build)
 make clean  # remove build artifacts
 ```
 
-Output is written next to each source file: `resume/main.pdf`, `cover-letters/coverletter.pdf`, and `cover-letters/coverletter-bloomberg.pdf`.
+Output is written next to each source file, including `resume/main.pdf` and the PDFs under `cover-letters/` and `applications/`.
 
 ### PDF not updating in Cursor?
 
@@ -44,6 +44,14 @@ If `make watch` itself seems stuck, stop it (`Ctrl+C`) and restart it.
 resume/main.tex                         Resume
 cover-letters/coverletter.tex           Cover letter (Morgan Stanley)
 cover-letters/coverletter-bloomberg.tex Cover letter (Bloomberg)
+applications/salford/                 MSc Artificial Intelligence
+applications/coventry/                MSc Advanced Software Engineering
+applications/portsmouth/              MSc Computer Science (Portsmouth)
+applications/greenwich/               MSc Computer Science (Greenwich)
+applications/chester/                 MSc Advanced Computer Science
+applications/east-london/             MSc Software Engineering
+applications/middlesex/               MSc Computer Science (Middlesex)
+applications/template.tex             Blank personal statement
 cls/resume.cls                          Shared document class
 Makefile                                Build commands
 ```
